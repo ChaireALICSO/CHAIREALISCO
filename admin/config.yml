@@ -1,0 +1,90 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: "ar"
+
+collections:
+  - name: "home"
+    label: "الواجهة الرئيسية"
+    files:
+      - file: "content/home.json"
+        label: "محتوى الصفحة الرئيسية"
+        fields:
+          - { label: "عنوان الهيرو", name: "hero_title", widget: "string" }
+          - { label: "وصف قصير", name: "hero_desc", widget: "text" }
+          - label: "إحصاءات"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "القيمة", name: "value", widget: "string" }
+              - { label: "الوصف", name: "label", widget: "string" }
+
+  - name: "about"
+    label: "عن الكرسي"
+    files:
+      - file: "content/about.md"
+        label: "النص التعريفي"
+        fields:
+          - { label: "المحتوى", name: "body", widget: "markdown" }
+
+  - name: "vision"
+    label: "الرؤية"
+    files:
+      - file: "content/vision.json"
+        label: "نص الرؤية"
+        fields:
+          - { label: "النص", name: "text", widget: "text" }
+
+  - name: "programs"
+    label: "البرامج"
+    files:
+      - file: "content/programs.json"
+        label: "قائمة البرامج"
+        fields:
+          - label: "العناصر"
+            name: "items"
+            widget: "list"
+            field: { label: "عنصر", name: "item", widget: "string" }
+
+  - name: "news"
+    label: "الأخبار"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: frontmatter
+    fields:
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "التاريخ", name: "date", widget: "datetime" }
+      - { label: "نص الخبر", name: "body", widget: "markdown" }
+      - { label: "صورة رئيسية", name: "cover", widget: "image", required: false }
+
+  - name: "resources"
+    label: "الموارد (بطاقات)"
+    files:
+      - file: "content/resources/index.json"
+        label: "قائمة الموارد"
+        fields:
+          - label: "بطاقات"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "المعرف", name: "id", widget: "string" }
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الوصف", name: "desc", widget: "text" }
+              - { label: "رابط (اختياري)", name: "link", widget: "string", required: false }
+
+  - name: "library"
+    label: "المكتبة (روابط تحميل)"
+    files:
+      - file: "content/library.json"
+        label: "ملفات المكتبة"
+        fields:
+          - label: "تحميلات"
+            name: "downloads"
+            widget: "list"
+            fields:
+              - { label: "الاسم", name: "name", widget: "string" }
+              - { label: "ملف/رابط", name: "url", widget: "string" }

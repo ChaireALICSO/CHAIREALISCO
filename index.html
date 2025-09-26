@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كرسي الألكسو للتربية على التنمية المستدامة والموروث الثقافي المبدع</title>
+  <meta name="description" content="المنصة الرسمية لكرسي الألكسو للتربية على التنمية المستدامة والموروث الثقافي المبدع بكلية علوم التربية – جامعة محمد الخامس." />
+  <style>
+    :root{ --blue:#1d4c8b; --green:#2e7d32; --bg:#ffffff; --card:#f8fafc; --muted:#475569; --text:#0f172a; --shadow:0 6px 20px rgba(15,23,42,.15); --radius:12px; }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Cairo",sans-serif;direction:rtl;text-align:right;background:var(--bg);color:var(--text)}
+    .container{width:min(1200px,95%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:2px solid var(--blue)}
+    .nav{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:10px 0}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;flex-wrap:nowrap}
+    nav a{padding:6px 10px;border-radius:10px;border:1px solid transparent;color:var(--blue);background:#fff;font-size:14px;white-space:nowrap}
+    nav a:hover, header nav a[aria-current="page"]{border-color:var(--blue);background:rgba(29,76,139,.10)}
+    .cta{background:linear-gradient(135deg,var(--blue),var(--green));color:#fff}
+    .layout{display:grid;grid-template-columns:1fr 280px;gap:24px;direction:ltr}
+    main{order:1;direction:rtl}
+    .sidenav{order:2;position:sticky;top:86px;height:max-content}
+    .snav{display:flex;flex-direction:column;gap:10px}
+    .snav a{display:block;text-align:center;padding:12px;border-radius:12px;background:var(--blue);color:#fff;border:2px solid var(--blue);box-shadow:var(--shadow)}
+    .snav a:hover,.snav a.active{background:#fff;color:var(--blue);outline:2px solid var(--green)}
+    @media(max-width:1100px){.layout{grid-template-columns:1fr}.sidenav{order:-1}.snav{flex-direction:row;flex-wrap:wrap}.snav a{flex:1 1 calc(50% - 10px)}}
+    .section{scroll-margin-top:90px;margin:32px 0}
+    .card{background:var(--card);border:1px solid rgba(29,76,139,.25);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    h2,h3,h4{color:var(--blue)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:12px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    @media(max-width:980px){.grid-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand" style="display:flex;align-items:center;gap:8px">
+        <img src="assets/uploads/logo.png" alt="شعار كرسي الألكسو" style="width:48px;height:auto;border-radius:8px" onerror="this.style.display='none'"/>
+        <h1 style="font-size:16px;color:var(--blue);margin:0">كرسي الألكسو للتربية على التنمية المستدامة والموروث الثقافي المبدع</h1>
+      </div>
+      <nav aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">عن الكرسي</a></li>
+          <li><a href="#vision">الرؤية والأهداف</a></li>
+          <li><a href="#programs">البرامج</a></li>
+          <li><a href="#resources">الموارد</a></li>
+          <li><a href="#news">الأخبار</a></li>
+          <li><a href="#library">المكتبة</a></li>
+          <li><a href="#team">الفريق</a></li>
+          <li><a class="cta" href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <main>
+      <section id="home" class="section">
+        <div class="card">
+          <h2 id="hero-title">تعليم يُعانق الاستدامة ويصون الذاكرة الثقافية</h2>
+          <p id="hero-desc" class="muted">وصف قصير…</p>
+          <div id="hero-stats" class="grid grid-3" style="margin-top:12px"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h3>عن الكرسي</h3>
+        <div id="about-body" class="card">…</div>
+      </section>
+
+      <section id="vision" class="section">
+        <h3>الرؤية والأهداف</h3>
+        <div id="vision-body" class="card">…</div>
+      </section>
+
+      <section id="programs" class="section">
+        <h3>البرامج</h3>
+        <div id="programs-body" class="card">…</div>
+      </section>
+
+      <section id="resources" class="section">
+        <h3>موارد ومبادرات الكرسي</h3>
+        <div id="resources-list" class="grid"></div>
+      </section>
+
+      <section id="news" class="section">
+        <h3>الأخبار والفعاليات</h3>
+        <div id="news-list" class="grid"></div>
+      </section>
+
+      <section id="library" class="section">
+        <h3>المكتبة والتنزيلات</h3>
+        <div id="library-body" class="card"></div>
+      </section>
+
+      <section id="team" class="section">
+        <h3>الفريق والشركاء</h3>
+        <div id="team-body" class="card">الإدارة العلمية، هيئة التدريس والباحثون، الشركاء.</div>
+      </section>
+
+      <section id="contact" class="section">
+        <h3>تواصل معنا</h3>
+        <div class="card">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none"><label>Don’t fill this out: <input name="bot-field"></label></p>
+            <label>الاسم الكامل<input style="width:100%" name="name" required></label>
+            <label>البريد الإلكتروني<input style="width:100%" type="email" name="email" required></label>
+            <label>موضوع الرسالة<select style="width:100%" name="subject"><option>استفسار عام</option><option>شراكة</option><option>التسجيل في ورشة</option><option>مساهمة بحثية</option></select></label>
+            <label>الرسالة<textarea style="width:100%" rows="5" name="message" required></textarea></label>
+            <button class="cta" type="submit">إرسال الرسالة</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidenav" aria-label="روابط الموارد">
+      <div class="snav">
+        <a href="#paper">ورقة تعريفية بالكرسي</a>
+        <a href="#bulletins">نشرات الكرسي</a>
+        <a href="#strategic-workshops">ورشات التكوين الاستراتيجي</a>
+        <a href="#edu-forums">المنتديات التربوية</a>
+        <a href="#expert-dialogues">جلسات حوارية مع الخبراء</a>
+        <a href="#scientific-forums">منتديات الكرسي العلمية</a>
+        <a href="#conceptual-papers">أوراق الكرسي المفاهيمية</a>
+        <a href="#book-submissions">تقديم كتب</a>
+        <a href="#book-fair">المعرض الدولي للكتاب</a>
+        <a href="#innovative-workshops">ورشات ابتكارية</a>
+        <a href="#proposed-projects">مشاريع مقترحة</a>
+        <a href="#awards">جوائز</a>
+        <a href="#annual-reports">التقارير السنوية</a>
+        <a href="#videos">فيديوهات</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="section" style="background:#f1f5f9;padding:16px;margin-top:32px">
+    <div class="container">
+      <p class="muted">© 2025 كرسي الألكسو – جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script>
+    async function j(path){ const r = await fetch(path); if(!r.ok) throw new Error(path); return r.json(); }
+    async function t(path){ const r = await fetch(path); if(!r.ok) throw new Error(path); return r.text(); }
+    function mdToHtml(md){ return md
+      .replace(/^---[\s\S]*?---\s*/,'')
+      .replace(/^# (.*$)/gim,'<h2>$1</h2>')
+      .replace(/^## (.*$)/gim,'<h3>$1</h3>')
+      .replace(/^### (.*$)/gim,'<h4>$1</h4>')
+      .replace(/\*\*(.*?)\*\*/gim,'<b>$1</b>')
+      .replace(/\*(.*?)\*/gim,'<i>$1</i>')
+      .replace(/\n$/gim,'<br />'); }
+
+    (async () => {
+      // home
+      try {
+        const home = await j('content/home.json');
+        document.getElementById('hero-title').textContent = home.hero_title;
+        document.getElementById('hero-desc').textContent = home.hero_desc;
+        const box = document.getElementById('hero-stats'); box.innerHTML='';
+        (home.stats||[]).forEach(s => box.innerHTML += `<div class="card"><b style="color:var(--green)">${s.value}</b><div class="muted">${s.label}</div></div>`);
+      } catch(e){ console.warn('home.json not found'); }
+
+      // about
+      try {
+        const aboutMd = await t('content/about.md');
+        document.getElementById('about-body').innerHTML = mdToHtml(aboutMd);
+      } catch(e){}
+
+      // vision / programs
+      try {
+        const vision = await j('content/vision.json');
+        document.getElementById('vision-body').innerHTML = `<p class="muted">${vision.text}</p>`;
+      } catch(e){}
+      try {
+        const programs = await j('content/programs.json');
+        document.getElementById('programs-body').innerHTML = `<ul>` + programs.items.map(i=>`<li>${i}</li>`).join('') + `</ul>`;
+      } catch(e){}
+
+      // resources
+      try {
+        const resources = await j('content/resources/index.json');
+        const wrap = document.getElementById('resources-list'); wrap.innerHTML='';
+        (resources.items || resources).forEach(r => {
+          wrap.innerHTML += `<div class="card" id="${r.id}"><h4 style="margin:0;color:var(--green)">${r.title}</h4><p class="muted">${r.desc}</p>${r.link?`<a href="${r.link}" class="cta" style="display:inline-block;padding:6px 10px;border-radius:8px;margin-top:6px">فتح</a>`:''}</div>`;
+        });
+      } catch(e){}
+
+      // news via index.json
+      try {
+        const newsIndex = await j('content/news/index.json'); // array of slugs
+        const wrap = document.getElementById('news-list'); wrap.innerHTML='';
+        for (const slug of newsIndex) {
+          const md = await t(`content/news/${slug}.md`);
+          const title = (md.match(/title:\s*"?(.+?)"?\n/)||[])[1] || slug;
+          const date = (md.match(/date:\s*(.+?)\n/)||[])[1] || '';
+          wrap.innerHTML += `<article class="card"><b>${title}</b><div class="muted" style="font-size:12px">${date}</div><div>${mdToHtml(md)}</div></article>`;
+        }
+      } catch(e){}
+    })();
+
+    // Active link highlighting for top nav and sidebar
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const sideLinks = [...document.querySelectorAll('.snav a')];
+    const topLinks  = [...document.querySelectorAll('header nav a')];
+    const map = new Map(sideLinks.map(a=>[a.getAttribute('href').slice(1), a]));
+    const tmap = new Map(topLinks.map(a=>[(a.getAttribute('href')||'').slice(1), a]));
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          const id = e.target.id;
+          sideLinks.forEach(a=>a.classList.toggle('active', a===map.get(id)));
+          topLinks.forEach(a=> a.removeAttribute('aria-current'));
+          const tl = tmap.get(id); if(tl) tl.setAttribute('aria-current','page');
+        }
+      })
+    }, {rootMargin:'-40% 0px -55% 0px', threshold:0});
+    sections.forEach(s=>io.observe(s));
+  </script>
+</body>
+</html>
